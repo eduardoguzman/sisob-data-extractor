@@ -1,0 +1,88 @@
+================================================================================
+   Copyright (c) 2014 "(IA)2 Research Group. Universidad de Málaga"
+                        http://iaia.lcc.uma.es | http://www.uma.es
+
+    This file is part of SISOB Data Extractor.
+
+    SISOB Data Extractor is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    SISOB Data Extractor is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SISOB Data Extractor. If not, see <http://www.gnu.org/licenses/>.
+================================================================================
+
+            ===================================================
+            Running The SISOB Data Extractor
+            ===================================================
+
+SISOB Data Extractor requires a Java Standard Edition Runtime
+Environment (JRE) version 6 or later.
+
+=============================
+Running With JRE 6 Or Later
+=============================
+
+(1) Download and Install a Java SE Runtime Environment (JRE)
+
+(1.1) Download a Java SE Runtime Environment (JRE),
+      release version 6 or later, from
+      http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+(1.2) Install the JRE according to the instructions included with the
+      release.
+
+      You may also use a full Java Development Kit (JDK) rather than just
+      a JRE.
+
+
+(2) Download and Install Apache TomEE Plus or Glassfish 4 as application serve.
+
+
+(3) Configure Project Settings
+
+Open and edit “sisob-data-extractor/data-extractor-rest-server/src/main/webapp/WEB-INF/server.properties”.
+
+(3.1) Set “server.url” (required)
+
+The server.url variable should be set to the url location of web application. 
+For instance: http://sistractor.iaia.lcc.uma.es/extractor.
+
+
+(3.2) Set “server.docs.folder” (required) 
+
+The  “server.docs.folder” is used to specify location of the project files.
+This folder has to be created before and must contain the “db” and 
+“gate-data-extractor-service” folders. These directories can be found in
+the root folder of the project. They should be copied inside the 
+“server.docs.folder”.
+
+(4) Add the users to the database “system.h2.db” (H2 database provides
+a tool for this purpose). It is placed in the  <server.url>/db folder. 
+Passwords have to be encoded using SHA-256 algorithm.
+By default a user “demo” (with password also “demo”) is created. If 
+you want to add a new user, use the same parameters as the “demo” user.
+Remember that the password has to be generated encode using SHA-256 algorithm.
+
+(5) The other two databases, i.e. “locations” and “academic_data_traductions”
+contain the dictionaries of the SISOB Data Extractor. For updating them
+those databases have to be opened and edited. See how to do it in the 
+official website of H2 database engine.
+
+(6) Compile and Deploy the web application (i.e. the war file generated) in 
+the application server.
+
+
+================
+Troubleshooting
+================
+
+Logs of the server application should be consulted if the SISOB Data Extractor
+goes wrong after being deployed. 
+

@@ -1,0 +1,61 @@
+Copyright (c) 2014 "(IA)2 Research Group. Universidad de Málaga"
+                     http://iaia.lcc.uma.es | http://www.uma.es
+
+This file is part of SISOB Data Extractor.
+
+SISOB Data Extractor is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SISOB Data Extractor is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SISOB Data Extractor. If not, see <http://www.gnu.org/licenses/>.
+
+=====================================
+
+This project is one of the results of the SISOB project (http://sisob.lcc.uma.es).
+The SISOB project was supported by the European Commission, call FP7-SCIENCE-IN-SOCIETY-2010-1, 
+as a Collaborative Project under the 7th Framework Program, Grant agreement 
+number 266588. 
+SISOB Data Extractor has been development by the (IA)2 Research Group at the 
+University of Málaga (Spain) in collaboration with the Fondazione Roselli 
+(http://www.personalweb.unito.it/aldo.geuna/).
+
+=====================================
+GATE NOTICE
+
+This software uses GATE (https://gate.ac.uk) developed by the University 
+of Sheffield, 1995-2014. 
+GATE is free software under the GNU licences and others. See more 
+information at its website.
+
+
+=====================================
+Crawler 4 NOTICE
+
+This software includes part of crawler4j written by Yasser Ganjisaffar 
+(yganjisa@uci.dot.edu). The original code can be accessed at 
+https://github.com/yasserg/crawler4j.
+
+
+=====================================
+H2 database NOTICE
+
+This software uses H2 database. H2 is dual licensed and available under 
+the MPL 2.0 (Mozilla Public License Version 2.0) or under the EPL 1.0 
+(Eclipse Public License). See more information in: 
+http://www.h2database.com/html/license.html
+
+
+=====================================
+Murmurhash algorithm NOTICE
+
+This software uses Murmurhash algorithm 2.0 created by Austin Appleby (aappleby@gmail.com). 
+See more information at: https://sites.google.com/site/murmurhash/.
+The Java version of this algorithm was developed by Andrzej Bialecki (ab@getopt.org).
+See more information at: http://www.getopt.org.

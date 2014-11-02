@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package eu.sisob.uma.restserver.restservices;
+
+import java.util.HashSet;
+import java.util.Set;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+/**
+ *
+ * @author guzman
+ */
+@ApplicationPath("resources")
+public class Resources extends Application {
+    @Override
+    public Set<Class<?>> getClasses() {
+        final Set<Class<?>> classes = new HashSet<Class<?>>();
+        // register root resource
+        classes.add(RESTSERVICEAuthorization.class);
+        classes.add(RESTSERVICEFile.class);
+        classes.add(RESTSERVICETask.class);
+        classes.add(RESTSERVICETasks.class);
+        return classes;
+    }    
+    
+    
+}
