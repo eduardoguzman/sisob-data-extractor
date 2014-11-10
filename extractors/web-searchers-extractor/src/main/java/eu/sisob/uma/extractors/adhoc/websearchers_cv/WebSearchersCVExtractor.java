@@ -237,7 +237,7 @@ public class WebSearchersCVExtractor extends WebSearchersExtractorCommons {
         
         String domain = clean_site(nextLine[idWebAddress]);
         String subject = nextLine[idSubject];
-        String expression_subject = expression + " " + subject + " " + files + " " + cv_keywords_in_query;
+        String expression_subject = expression + " AND " + subject + " " + files + " " + cv_keywords_in_query;
         expression_subject = expression_subject.replaceAll("\t", " ");
         expression_subject = expression_subject.replaceAll("  ", " ");                    
 
@@ -282,7 +282,8 @@ public class WebSearchersCVExtractor extends WebSearchersExtractorCommons {
             for(Element e : elements)
             {                    
                 if((
-                        e.text().startsWith("[") && !e.text().startsWith("[PDF]")
+                        //e.text().startsWith("[") && !e.text().startsWith("[PDF]")
+                        !e.text().startsWith("PDF")
                    ) || 
                    e.absUrl("href").contains("duckduckgo.com/y.js") ||
                    e.absUrl("href").contains("wikipedia.") ||
@@ -311,7 +312,8 @@ public class WebSearchersCVExtractor extends WebSearchersExtractorCommons {
                 String score = "";
                 String ext = "";
 
-                if(e.text().startsWith("[PDF]") || e.text().startsWith("[DOCX]") || e.text().startsWith("[DOC]") || e.text().startsWith("[RTF]")){    
+                if(e.text().startsWith("PDF") || e.text().startsWith("DOCX") || e.text().startsWith("DOC") || e.text().startsWith("RTF")){    
+                //if(e.text().startsWith("[PDF]") || e.text().startsWith("[DOCX]") || e.text().startsWith("[DOC]") || e.text().startsWith("[RTF]")){    
 
                     String clean_name_1 = e.text().replaceAll("[^\\w\\s]", "").toLowerCase();
                     int i = e.absUrl("href").lastIndexOf("/");
