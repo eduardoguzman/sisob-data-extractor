@@ -319,7 +319,7 @@ public class WebSearchersCVExtractor extends WebSearchersExtractorCommons {
                     int i = e.absUrl("href").lastIndexOf("/");
                     int f = e.absUrl("href").lastIndexOf(".");
                     String clean_name_2 = "";
-                    if(i != -1 && f != -1)
+                    if(i != -1 && f != -1 && i<=f)
                         clean_name_2 = e.absUrl("href").substring(i, f).toLowerCase();
                     boolean b = false;
                     for(String k : cv_keywords_in_name_list){
