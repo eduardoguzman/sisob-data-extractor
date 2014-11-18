@@ -170,6 +170,7 @@ public class WebSearchersExtractor extends WebSearchersExtractorCommons {
                    e.absUrl("href").contains("www.experts.scival.com")  ||
                    e.absUrl("href").contains("ratemyprofessors.com")  ||                        
                    e.absUrl("href").contains("flickr.com")  ||
+                   e.absUrl("href").contains("r.msn.com")  ||     
                    e.absUrl("href").endsWith(".txt")  ||
                    e.absUrl("href").endsWith(".csv")  ||
                    e.absUrl("href").endsWith(".xml")  ||
@@ -177,7 +178,9 @@ public class WebSearchersExtractor extends WebSearchersExtractorCommons {
                    e.absUrl("href").endsWith(".docx")  ||
                    e.absUrl("href").endsWith(".xls")  ||
                    e.absUrl("href").endsWith(".xlxs")  ||
-                   e.absUrl("href").contains("www.amazon"))
+                   e.absUrl("href").contains("www.amazon") ||
+                   e.parent().parent().className().contains("sponsored")                        
+                        )
                 {
                     max_results++;
                     continue;
