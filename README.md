@@ -6,8 +6,8 @@ The SISOB project was supported by the European Commission, call FP7-SCIENCE-IN-
 as a Collaborative Project under the 7th Framework Program, Grant agreement 
 number 266588. 
 SISOB Data Extractor has been development by the (IA)2 Research Group (http://iaia.lcc.uma.es)
-at the University of Málaga (Spain) (http://www.uma.es) in collaboration with the Fondazione 
-Roselli (http://www.personalweb.unito.it/aldo.geuna/).
+at the University of Málaga (Spain) (http://www.uma.es) in collaboration with the Università di 
+Torino (http://www.personalweb.unito.it/aldo.geuna/).
 
 See details about installation in RUNNING.txt. 
 
